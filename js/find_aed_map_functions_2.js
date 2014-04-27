@@ -25,7 +25,7 @@ function initialize(elementId) {
     //using our callback as the success function
     $.ajax(
         {
-            url : 'php/find_aed/initialMap.php',
+            url : 'http://aed-pointer.eu/aed_temp/SEARCH_mobile/php/find_aed/initialMap.php',
             dataType : 'xml',
             success : callback
         }
