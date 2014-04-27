@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>AED-Pointer.eu</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<link rel="icon" type="image/png" href="images/pointer.png">
+
+	<link rel="stylesheet" href="lib/css/css_reset.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="lib/css/normalize.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="css/index_main_mobile.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	
+	<link rel="stylesheet" href="css/findAed_mobile.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	
+	<script src="lib/js/markerclusterer.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	
+	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDSMTHUIyndywwgyws3_C34P5LognZxgLc&sensor=false"></script>
+	<script src="js/find_aed_map_functions_2.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/find_aed_options.js" type="text/javascript" charset="utf-8"></script>
+	
+	
+	
+	
+</head>
+<body>
+	
+	
+	
+	<div id="headerContainer" style="z-index:10;">
+		<img id="menu_icon" src="assets/menu.png" width="30" height="30" alt="Menu">
+		<div id="logoContainer">
+			<img  src="assets/logo_mob.png"  alt="AED-Pointer Logo">		
+		</div>
+		
+		
+		
+	</div>
+	
+	
+	
+	<div id="topSpaceContainer" ></div>	
+	<div id="theRadius"  style="display:none;"></div>
+	
+	<!--RECHERCHE URGENTE-->
+	<div id="controlContainer_ur">
+		<div id="searchNav_search_ur" onclick="display_ur()" style="display:none;">
+			<div id="searchNav_search_back_picto_ur" style="display:none;"><img src="assets/picto_5.png" width="40" height="40" alt="Picto 01"></div>
+			<div id="searchNav_search_title_ur">RECHERCHE URGENTE</div>
+			<div id="searchNav_search_picto_ur"><img style="padding:10px 0px;"src="assets/down_arrow_android.png"  alt="Down Arrow Android"></div>
+		</div>
+		<div id="searchNav_content_ur"  >
+			<div id="searchNav_geo_ur" onclick="geo_ur()">
+				<div id="searchNav_geo_title_ur">Position Actuelle</div>
+				<div id="searchNav_geo_picto_ur"><img src="assets/picto_2.png" width="40" height="40" alt="Picto 01"></div>
+			</div>
+			<div id="searchNav_address_ur">
+				<div id="searchNav_address_input_ur"><input id="theAddress" placeholder="Adresse, Lieu"style="width:100%;" type="text"> </div> 
+				<div id="searchNav_address_picto_ur" onclick="search_by_address_ur()"><img src="assets/picto_3.png" width="40" height="40" alt="Picto 01"></div>	
+			</div> 
+		</div>
+		<div id="tickets_content_ur"  style="display:none;">	
+			
+		</div>
+		<div id="tickets_details_ur" style="display:none;" >
+			<div id="ticket_details_canvas_ur">
+				<div class="dispo_1" >
+					<div class="dispo_txt">Actuellement disponible</div>
+					<div id="testContainer2_ur" style="width:100%; float:right">
+						<div id="distance1_ur">2.9 km</div>
+						<div id="company1_ur"> Province de Liège</div>
+						<div id="theType1_ur">Entreprise</div>	
+					</div>
+					<div id="ticket_logo1_ur"><img src="images/leuven universiteit_logo.jpg" width="100%" alt="Leuven Universiteit Logo"></div>
+					<div style="width:100%; float:left;margin:10px;"></div>
+					<div id="testContainer_ur" style="width:100%; float:left">
+						<div class="ticketTitle"> Adresse</div>
+						<div class="ticketSubtitle"> Rue Beeckman 26, 4000 Liège, Belgique</div>
+						<div class="ticketTitle"> Description</div>
+						<div class="ticketSubtitle"> 1er Etage</div>
+						<div class="ticketTitle"> Description sur la disponibilité</div>
+						<div class="ticketSubtitle">DEA non disponible entre Noël et Nouvel An</div>
+						<div class="ticketTitle"> Description de l'accessibilité</div>
+						<div class="ticketSubtitle">DEA accessible une fois entré dans le bâtiment</div>
+						
+						
+					</div>
+					<div id="ticket_img_ur" onclick="big_img_ur()"><img src="images/20130606_104910_(kopie)_525ed2187ba07.jpg" width="100%"></div>
+					
+					<div id="direction_ur"><a href="http://maps.google.com/?dirflg=w&amp;saddr=50.6467798,5.546561600000018&amp;daddr=50.6355921,5.565296799999942" target="_blank">Directions Google map</a></div>
+					<div id="extra_info_ur">
+						<div class="ticketSubtitle"> Signaler une erreure</div>
+						<div class="ticketSubtitle"> Contactez nous</div>
+						<div class="ticketSubtitle"> Mettez à jour votre DEA</div>
+						<div class="ticketSubtitle"> Partager</div>
+					</div>
+				</div>	
+				
+			</div>
+			
+		</div>
+	</div>
+	
+	
+	
+	<!--//EXPLORER VOTRE ENVIRONEMENT-->
+	
+	<div id="findMapContainer">
+		<div id="map" style="width: 100%; height: 100%;"></div>
+	</div>
+	<div id="timeHolder">	
+		<img src="assets/pointerTimer.gif" width="50" height="58" alt="PointerTimer">
+	</div>
+	
+
+</body>
+
+</html>

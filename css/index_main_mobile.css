@@ -1,0 +1,257 @@
+body {
+	font-family:"Aller";
+	background-color:#eaeaea;
+	color:#3c3c3b;	
+}
+
+a {
+	text-decoration: none;
+	color: #3c3c3b;
+}
+
+#topSpaceContainer {
+	width:100%;
+	height:40px;
+	background-color:#eaeaea;	
+}
+#headerContainer {
+	position:fixed;
+	height:40px;
+	top:0px;
+	left:0px;
+	width:100%;
+	background: ##eaeaea;
+}
+
+#logoContainer {
+	text-align:center;
+	width:100%;
+	padding:5px 0px 5px 0px;	
+}
+#menu_icon{
+	position:fixed;
+	top:0px;
+	left:0px;
+	padding:5px;
+}
+
+
+#counterContainer {
+	position:relative;
+	float:left;
+	width:25%;
+	padding:10px 0px 10px 0px;	
+	text-align:left;
+	
+}
+#counterContainer #aedCount{
+	display:inline;
+	float:left;
+	font-size:60px;
+	line-height:60px;
+	font-weight:bold;
+	vertical-align:top;
+	padding:0px;
+	color:#3c3c3b;		
+}
+#counterContainer > img{
+	display:inline;
+	float:left;	
+}
+
+.arrow_box {
+	display:none;
+	position: absolute;
+	top:80px;
+	left:-126px;
+	width:300px;
+	height:470px;
+	background: white;
+	border: 1px solid #b7b7b7;
+	padding:10px;
+	border-radius:0px;
+	
+	
+
+    -moz-box-shadow: 0px 0px 10px #000000;
+    -webkit-box-shadow: 0px 0px 10px #000000;
+    box-shadow: 0px 0px 10px #000000;
+
+
+}
+
+
+
+
+#arrow_box_title {
+	float:left;
+	width:100%;
+	text-align:center;
+	color:#239b52;
+	font-size:1.1em;
+	padding:10px 0px;
+	border-bottom: 10px solid white;
+	background-color:#3c3c3b;
+	color:white;	
+}
+#last_added_outer_container {
+	width:100%;
+	height:420px;
+	overflow:scroll;
+}
+.last_added_container {
+	float:left;
+	width:100%;
+	padding:10px 0px;
+	border-bottom: 10px solid white;
+	background-color:#eaeaea;
+}
+.pointer_img_opened {
+	float:left;
+	width:25%;
+	text-align:center;
+	color:#229c52;	
+}
+.pointer_img_closed {
+	float:left;
+	width:25%;
+	text-align:center;
+	color:#b11b10;
+}
+.last_added_container_name {
+	float:left;
+	width:75%;
+	font-weight:bold;
+	text-align:center;
+}
+.last_added_container_address{
+	float:left;
+	width:75%;
+}
+.last_added_container_availability{
+	float:left;
+	width:100%;
+	text-align:center;
+}
+
+/* Basic Styles */
+
+nav {
+	height: 25px;
+	width: 100%;
+	background: #3c3c3b;
+	font-size: 11pt;
+	font-weight: bold;
+	position: fixed;
+	top:0px;
+	left:0px;
+	margin-top:82px;
+	z-index:1000;
+}
+nav ul {
+	padding: 0;
+	margin: 0 auto;
+	height: 25px;
+	width:750px;
+}
+nav li {
+	display: inline;
+	float: left;
+}
+nav a {
+	color: #fff;
+	display: inline-block;
+	width: 150px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 25px;
+}
+nav li a {
+	border-right: 1px solid #576979;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+nav li:last-child a {
+	border-right: 0;
+}
+nav a:hover, nav a:active {
+	background-color: #20984f;
+}
+nav a#pull {
+	display: none;
+}
+
+
+
+@font-face {
+	font-family:"Aller";
+	src:url("../fonts/Aller_Rg.eot") format("eot"),
+		url("../fonts/Aller_Rg.woff") format("woff"),
+		url("../fonts/Aller_Rg.ttf") format("truetype"),
+		url("../fonts/Aller_Rg.svg#Aller") format("svg");
+	font-weight:normal;font-style:normal;
+}
+
+#underText {
+	width:80%;
+	margin:0 auto;
+	padding-top:15px;
+	padding-bottom:40px;
+	font-size:.9em;
+	text-align:center;
+}
+#preFooter {
+	width:80%;
+	margin: 0 auto;	
+}
+#preFooter li{
+	display: inline;
+	float: left;
+	width:25%;	
+}
+#preFooter li div {
+	width:80%;
+	margin:0 auto;
+	font-size:.9em;	
+}
+#preFooter li div span{
+	font-weight:bold;
+	font-size:1.2em;	
+}
+#preFooter li div a{
+	font-weight:bold;	
+}
+#preFooter li img{
+
+	width:90%;
+	margin: 0 auto;	
+}
+#preFooter li div #fb {
+	width:40%;
+	float:right;
+}
+
+#footer {
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	background-color:#3c3c3b;	
+}
+#footer a {
+	text-decoration: none;
+	color:white;
+}
+#footer li{
+	float:right;
+	display:inline;
+	color:white;
+	padding:5px 10px;
+}
+#footerSpace {
+	display:block;
+	float:left;
+	height:30px;
+	width:100%;
+}
